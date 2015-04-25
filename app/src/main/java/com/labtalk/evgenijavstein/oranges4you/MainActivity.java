@@ -60,7 +60,7 @@ public class MainActivity extends Activity implements
 
     @Override
     public void onConnected(Bundle bundle) {
-        //AT THIS THE USER IS AUTHENTICATED
+        //AT THIS POINT THE USER IS AUTHENTICATED
 
 
         signInButton.setVisibility(View.GONE);
@@ -100,7 +100,7 @@ public class MainActivity extends Activity implements
     @Override
     protected void onStart() {
         super.onStart();
-        //CONNECT ON START UP: IF SUCCESS -> SIGN BUTTON IS HIDDEN, USER DATA DISPLAYED
+        //CONNECT ON START UP: IF SUCCESS -> SIGN-IN BUTTON IS HIDDEN, USER DATA DISPLAYED
         mGoogleApiClient.connect();
 
 
